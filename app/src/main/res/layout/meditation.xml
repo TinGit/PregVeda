@@ -4,13 +4,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView1"
-        android:src="@drawable/prego"
-        android:layout_alignParentTop="true" />
-
     <FrameLayout
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -229,6 +222,8 @@
                 android:layout_marginLeft="2dp" />
         </TableRow>
     </TableLayout>
+
+
 
 
 </RelativeLayout>
