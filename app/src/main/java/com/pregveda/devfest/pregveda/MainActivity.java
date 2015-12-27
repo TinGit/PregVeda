@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.provider.ContactsContract;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         imageButton = (ImageButton) findViewById(R.id.imageButton);
 
 
-       imageButton.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent read1=new Intent(getApplicationContext(),meditation.class);
+                        Intent intent = new Intent(getApplicationContext(), meditation.class);
 
-                startActivity(read1);
+                    startActivity(intent);
 
             }
         });
