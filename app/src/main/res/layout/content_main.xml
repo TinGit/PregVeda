@@ -1,87 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
 
     android:label="@string/app_name"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.pregveda.devfest.pregveda.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/prego"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentLeft="false" />
+    tools:showIn="@layout/activity_main"
+    android:background="#f6fdf7"
+    android:weightSum="1"
+    android:id="@+id/lnr"
+    android:orientation="horizontal">
 
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="200dp"
-        android:layout_height="350dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginTop="100dp"
-        android:id="@+id/linearLayout">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Nutrition"
-            android:id="@+id/nutrition" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="exercise"
-            android:id="@+id/exercise" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Music"
-            android:id="@+id/music" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Symptoms"
-            android:id="@+id/symptoms" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Life style"
-            android:id="@+id/lifestyle"
-            android:layout_alignBottom="@+id/linearLayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="54dp" />
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/mainpage" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Profile"
-        android:id="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:linksClickable="true"/>
 
 
-</RelativeLayout>
+</LinearLayout>
