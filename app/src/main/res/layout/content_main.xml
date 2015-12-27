@@ -43,8 +43,8 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
-            android:text="Yoga"
-            android:id="@+id/yoga" />
+            android:text="exercise"
+            android:id="@+id/exercise" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
