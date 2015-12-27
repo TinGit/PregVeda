@@ -1,7 +1,10 @@
 package com.pregveda.devfest.pregveda;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import android.provider.ContactsContract;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,29 +16,30 @@ import android.support.v7.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton imageButton;
+    ImageButton imageButton1;
+    ImageButton imageButton2;
+    ImageButton imageButton3;
+    ImageButton imageButton4;
+    ImageButton imageButton5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.meditation);
-     //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   imageButton = (ImageButton) findViewById(R.id.imageButton);
-     //   setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_main);
 
-      /*  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
 
-       /* imageButton.setOnClickListener(new View.OnClickListener() {
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                        Intent intent = new Intent(getApplicationContext(), meditation.class);
+
+                    startActivity(intent);
+
             }
-        });*/
+        });
     }
 
     @Override
