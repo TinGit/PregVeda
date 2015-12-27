@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile);
+        setContentView(R.layout.meditation);
      //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
      //   imageButton = (ImageButton) findViewById(R.id.imageButton);
      //   setSupportActionBar(toolbar);
