@@ -1,87 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
 
     android:label="@string/app_name"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.pregveda.devfest.pregveda.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/prego"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentLeft="false" />
+    tools:showIn="@layout/activity_main"
+    android:weightSum="1"
+    android:id="@+id/lnr"
+    android:orientation="horizontal">
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="200dp"
-        android:layout_height="350dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginTop="100dp"
-        android:id="@+id/linearLayout">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:useDefaultMargins="false">
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nutrition"
-            android:id="@+id/nutrition" />
+            android:id="@+id/lnrheader"
+            android:layout_row="0"
+            android:layout_column="1">
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Yoga"
-            android:id="@+id/yoga" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Music"
-            android:id="@+id/music" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Symptoms"
-            android:id="@+id/symptoms" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="181dp"
-            android:layout_height="wrap_content"
-            android:text="Life style"
-            android:id="@+id/lifestyle"
-            android:layout_alignBottom="@+id/linearLayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="54dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Profile"
-        android:id="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:linksClickable="true"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/mainpage" />
+        </LinearLayout>
 
 
-</RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/lnrmidle"
+            android:layout_row="1"
+            android:layout_column="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton1"
+                    android:src="@drawable/food"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:longClickable="true"
+                    android:onClick="setContentView" />
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton2"
+                    android:src="@drawable/musicmain"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/linearLayout4"
+            android:layout_row="2"
+            android:layout_column="1" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/tm"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton4"
+                    android:src="@drawable/symptoms"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/linearLayout5"
+            android:layout_row="3"
+            android:layout_column="1" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/prego"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton5"
+                    android:src="@drawable/cmnty"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
