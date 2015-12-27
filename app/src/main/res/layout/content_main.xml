@@ -9,7 +9,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.pregveda.devfest.pregveda.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#dddddd"
     android:weightSum="1"
     android:id="@+id/lnr"
     android:orientation="horizontal">
@@ -56,22 +55,18 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton1"
                     android:src="@drawable/food"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:longClickable="true" />
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton2"
                     android:src="@drawable/musicmain"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageButton3"
-                    android:src="@drawable/tm"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
 
             </LinearLayout>
         </LinearLayout>
@@ -93,25 +88,53 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton"
-                    android:src="@drawable/food"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
+                    android:src="@drawable/tm"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
 
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton4"
-                    android:src="@drawable/food"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
+                    android:src="@drawable/symptoms"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/linearLayout5"
+            android:layout_row="3"
+            android:layout_column="1" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/prego"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
 
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton5"
-                    android:src="@drawable/food"
-                    android:scaleType="fitStart"
-                    android:layout_weight="1" />
+                    android:src="@drawable/cmnty"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:clickable="true" />
             </LinearLayout>
         </LinearLayout>
 
