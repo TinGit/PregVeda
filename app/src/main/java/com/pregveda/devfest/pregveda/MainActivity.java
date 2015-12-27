@@ -17,13 +17,65 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+ImageButton imgnutrition;
+    ImageButton imgmusic;
+    ImageButton imgexercise;
+    ImageButton imgsymptom;
+    ImageButton imglifestyle;
+    ImageButton imgeYoga;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
+        imgnutrition=(ImageButton)findViewById(R.id.imgnutrition);
+         imgexercise=(ImageButton)(ImageButton)findViewById(R.id.imgexercise);
+          imgsymptom=(ImageButton)(ImageButton)findViewById(R.id.imgsymptom);
+          imglifestyle=(ImageButton)(ImageButton)findViewById(R.id.imglifestyle);
+          imgeYoga=(ImageButton)(ImageButton)findViewById(R.id.imgeYoga);
+        imgmusic=(ImageButton)(ImageButton)findViewById(R.id.imgmusic);
+
+        imgnutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.nutrition);
+            }
+        });
+
+        imgexercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.exercise);
+            }
+        });
+
+        imgsymptom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.symptoms);
+            }
+        });
+
+        imglifestyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.lifestyle);
+            }
+        });
+
+        imgmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.music);
+            }
+        });
+
+
+
+
+
 
     }
 
