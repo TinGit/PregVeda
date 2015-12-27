@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_weight="0.72"
+        android:text="Rest is just as important as exercise during pregnancy. Be sure to get plenty of sleep at night. Most pregnant women need about 8 hours of sleep but your needs may be different. You may also need to rest during the day.  There are some things you can do to keep from getting too tired. If your work requires you to be on your feet most of the day, try to sit down, put your feet up, and close your eyes whenever it is convenient. But if you spend most of your time sitting, get up and walk around for a few minutes every hour. When you are at home, take a nap during the day, especially if you have children who take naps. Plan a short rest period and really relax about the same time every day. When resting, you may find it more comfortable to use an extra pillow as shown in the illustration."
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/rest" />
+</LinearLayout>
