@@ -133,7 +133,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imgeYoga"
+                    android:id="@+id/imgeDelivery"
                     android:src="@drawable/cmnty"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"

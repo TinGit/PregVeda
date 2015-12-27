@@ -22,7 +22,7 @@ ImageButton imgnutrition;
     ImageButton imgexercise;
     ImageButton imgsymptom;
     ImageButton imglifestyle;
-    ImageButton imgeYoga;
+    ImageButton imgeDelivery;
 
 
     @Override
@@ -34,7 +34,7 @@ ImageButton imgnutrition;
          imgexercise=(ImageButton)(ImageButton)findViewById(R.id.imgexercise);
           imgsymptom=(ImageButton)(ImageButton)findViewById(R.id.imgsymptom);
           imglifestyle=(ImageButton)(ImageButton)findViewById(R.id.imglifestyle);
-          imgeYoga=(ImageButton)(ImageButton)findViewById(R.id.imgeYoga);
+          imgeDelivery=(ImageButton)(ImageButton)findViewById(R.id.imgeDelivery);
         imgmusic=(ImageButton)(ImageButton)findViewById(R.id.imgmusic);
 
         imgnutrition.setOnClickListener(new View.OnClickListener() {
