@@ -33,9 +33,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent read1=new Intent();
-                read1.setAction(android.content.Intent.ACTION_VIEW);
-                read1.setData(ContactsContract.Contacts.CONTENT_URI);
+                Intent read1=new Intent(getApplicationContext(),meditation.class);
+
                 startActivity(read1);
 
             }
