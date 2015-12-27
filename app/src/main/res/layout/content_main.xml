@@ -17,7 +17,8 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical">
+        android:layout_gravity="center_vertical"
+        android:useDefaultMargins="false">
 
 
 
@@ -58,7 +59,8 @@
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:longClickable="true" />
+                    android:longClickable="true"
+                    android:onClick="setContentView" />
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
