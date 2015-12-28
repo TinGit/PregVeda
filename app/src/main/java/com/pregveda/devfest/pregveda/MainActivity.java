@@ -23,18 +23,23 @@ ImageButton imgnutrition;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        imglifestyle=(ImageButton)findViewById(R.id.imglifestyle);
+        imgmusic=(ImageButton)findViewById(R.id.imgmusic);
         imgnutrition=(ImageButton)findViewById(R.id.imgnutrition);
+        imgSettings=(ImageButton)findViewById(R.id.imgSettings);
+
+
         imgexercise=(ImageButton)findViewById(R.id.imgexercise);
         imgsymptom=(ImageButton)findViewById(R.id.imgsymptom);
-        imglifestyle=(ImageButton)findViewById(R.id.imglifestyle);
+
         imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
-        imgmusic=(ImageButton)findViewById(R.id.imgmusic);
-        imgSettings=(ImageButton)findViewById(R.id.imgSettings);
+
+
 
         imglifestyle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent1 = new Intent(getApplicationContext(),lifestyleActivity.class);
+
                 startActivity(new Intent(MainActivity.this,lifestyleActivity.class));// for calling the activity
             }
         });
@@ -42,8 +47,10 @@ ImageButton imgnutrition;
         imgmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(),musicAcitivity.class);
-                startActivity(intent2);// for calling the activity
+
+
+
+                startActivity(new Intent(MainActivity.this,musicAcitivity.class));
             }
         });
         imgnutrition.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +62,9 @@ ImageButton imgnutrition;
         imgSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_profile);
+
+
+                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
 
             }
         });

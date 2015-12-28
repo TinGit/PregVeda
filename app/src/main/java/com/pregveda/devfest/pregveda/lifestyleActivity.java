@@ -29,7 +29,7 @@ public class lifestyleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.lifestyle);
+        setContentView(R.layout.activity_lifestyle);
 
         imglifeStyleHome=(ImageButton)findViewById(R.id.imglifeStyleHome);
 
