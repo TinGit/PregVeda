@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.os.Handler;
@@ -23,6 +24,9 @@ public class music extends ActionBarActivity {
     private int forwardTime = 2000, backwardTime = 2000;
     private Handler durationHandler = new Handler();
 
+    //play button
+    private ImageButton btnPlay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +35,20 @@ public class music extends ActionBarActivity {
         songDuration = (TextView) findViewById(R.id.songDuration);
         mediaPlayer = MediaPlayer.create(this, R.raw.garbhsanskar);
         seekBar = (SeekBar) findViewById(R.id.seekBar);
-        songName.setText("Song.mp3");
+        songName.setText("garbhsanskar.mp3");
         seekBar.setMax((int) finalTime);
         seekBar.setClickable(false);
+
+        //play button
+        btnPlay=(ImageButton)findViewById(R.id.btn_Play);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play(v);
+            }
+        });
     }
+
     private Runnable updateSeekBarTime = new Runnable() {
         public void run() {
             timeStart = mediaPlayer.getCurrentPosition();
