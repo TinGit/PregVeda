@@ -3,4 +3,41 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Nutrition"
+        android:id="@+id/button2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Yoga"
+        android:id="@+id/button3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:id="@+id/button4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Symptoms"
+        android:id="@+id/button5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Life style"
+        android:id="@+id/button6"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 </LinearLayout>
