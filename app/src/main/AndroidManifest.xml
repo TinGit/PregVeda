@@ -35,6 +35,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pregveda.devfest.pregveda.MainActivity" />
         </activity>
+        <activity
+            android:name=".musicAcitivity"
+            android:label="@string/title_activity_music_acitivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pregveda.devfest.pregveda.MainActivity" />
+        </activity>
+        <activity
+            android:name=".nutritionActivity"
+            android:label="@string/title_activity_nutrition"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pregveda.devfest.pregveda.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pregveda.devfest.pregveda.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

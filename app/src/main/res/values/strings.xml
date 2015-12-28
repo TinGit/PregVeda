@@ -6,4 +6,7 @@
     <string name="title_activity_g">G</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_lifestyle">lifestyleActivity</string>
+    <string name="title_activity_music_acitivity">musicAcitivity</string>
+    <string name="title_activity_nutrition">nutritionActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 </resources>
