@@ -1,5 +1,6 @@
 package com.pregveda.devfest.pregveda;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -18,13 +19,24 @@ public class lifestyleActivity extends AppCompatActivity {
     Button btnRest;
     Button btnAbd;
     Button btnRelax;
+
+    Button btnMeditation;
+    Button btnBadHabit;
+    Button sanitationBtn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lifestyle);
+        setContentView(R.layout.lifestyle);
         btnRest = (Button) findViewById(R.id.rest);
         btnAbd = (Button) findViewById(R.id.abdominal);
         btnRelax=(Button) findViewById(R.id.relaxation);
+
+        btnMeditation = (Button) findViewById(R.id.meditation);
+        btnBadHabit = (Button) findViewById(R.id.bad);
+
+        sanitationBtn = (Button) findViewById(R.id.btnSan);
 
         btnRest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,8 +52,12 @@ public class lifestyleActivity extends AppCompatActivity {
             }
         });
 
-        // txtAbd.setText("This is a test text for Abdominal Breathing");
-
+        sanitationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.sanitation);
+            }
+        });
 
         btnRelax.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,10 +67,25 @@ public class lifestyleActivity extends AppCompatActivity {
             }
         });
 
+        btnMeditation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //txtAbd.setText("This is a test text for Abdominal Breathing");
+                setContentView(R.layout.meditation);
+            }
+        });
+
+
+        btnBadHabit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //txtAbd.setText("This is a test text for Abdominal Breathing");
+                setContentView(R.layout.badhabits);
+            }
+        });
+
 
     }
-
-
     }
 
 

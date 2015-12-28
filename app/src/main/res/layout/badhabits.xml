@@ -25,7 +25,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/frameLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -50,15 +50,15 @@
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:id="@+id/imageButton6"
-                android:layout_marginLeft="125dp"
+                android:id="@+id/badHabit_home"
+                android:layout_marginLeft="110dp"
                 android:src="@drawable/homeicon"
                 android:layout_marginBottom="1dp" />
 
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
+                android:id="@+id/badHabit_next"
                 android:src="@drawable/nexticon"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="2dp" />
@@ -69,7 +69,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="35dp">
+            android:layout_height="33dp">
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="30dp"
@@ -90,13 +90,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Women who do not smoke are more likely to deliver a healthy baby of normal birth weight than women who do smoke. Smoking cigarettes during pregnancy is directly associated with low birth weight, premature births, miscarriage, and other complications.Babies born to mothers who smoked while pregnant and after delivery have a higher incidence of sudden infant death syndrome."
+            android:text="Smoking cigarettes during pregnancy is directly associated with low birth weight, premature births, miscarriage, and other complications.Babies born to mothers who smoked while pregnant and after delivery have a higher incidence of sudden infant death syndrome."
             android:id="@+id/textView12" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="35dp">
+            android:layout_height="33dp">
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="30dp"
@@ -123,7 +123,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="35dp">
+            android:layout_height="33dp">
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="30dp"
@@ -145,7 +145,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" It's a good idea to use as little caffeine as possible. Many soft drinks, coffee, tea, cocoa, and chocolate contain caffeine. You can find out if a food or drink contains caffeine by checking the label. Choose milk and fruit juices as beverages and caffeine-free coffee, tea, or soft drinks."
-            android:id="@+id/textView14" />
+            android:id="@+id/textView14"
+            android:paddingBottom="5dp" />
 
 
     </LinearLayout>

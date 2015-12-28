@@ -49,7 +49,7 @@
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:id="@+id/imageButton6"
+                android:id="@+id/sanitation_home"
                 android:layout_marginLeft="125dp"
                 android:src="@drawable/homeicon"
                 android:layout_marginBottom="1dp" />

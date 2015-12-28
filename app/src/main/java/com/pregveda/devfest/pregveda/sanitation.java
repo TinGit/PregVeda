@@ -2,12 +2,13 @@ package com.pregveda.devfest.pregveda;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ImageButton;
 import android.view.View;
+import android.widget.ImageButton;
+
 /**
- * Created by user on 12/27/15.
+ * Created by TinbitKassahun on 12/28/2015.
  */
-public class meditation extends Activity {
+public class sanitation extends Activity {
 
     ImageButton imgBtn;
 
@@ -15,10 +16,10 @@ public class meditation extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.meditation);
+        setContentView(R.layout.sanitation);
 
 
-        imgBtn = (ImageButton) findViewById(R.id.medhome_btn);
+        imgBtn = (ImageButton) findViewById(R.id.sanitation_home);
 
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,4 @@ public class meditation extends Activity {
         });
 
     }
-
-
 }
