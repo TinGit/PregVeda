@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical" android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:weightSum="1">
-<include layout="@layout/header"
-    android:layout_width="372dp"
-    android:layout_height="100dp" />
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header"/>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="97dp"
-    android:text="Exercise is very important to you and your baby. If you stay active you will feel better. Outdoor exercise and recreation give you a chance to get sunshine and fresh air. Walking is particularly good because it strengthens some of the muscles you will use in labor."
-    android:id="@+id/textView4"
-    android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
+        android:text="Exercise is very important to you and your baby. If you stay active you will feel better. Outdoor exercise and recreation give you a chance to get sunshine and fresh air. Walking is particularly good because it strengthens some of the muscles you will use in labor."
+        android:id="@+id/textView4"
+        android:layout_gravity="center" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:src="@drawable/prego"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Exercise"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </LinearLayout>

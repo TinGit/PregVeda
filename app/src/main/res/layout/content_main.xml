@@ -54,17 +54,18 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton1"
+                    android:id="@+id/imgnutrition"
                     android:src="@drawable/food"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:longClickable="true"
-                    android:onClick="setContentView" />
+                    android:onClick="setContentView"
+                    android:contentDescription="imageFood" />
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/imgmusic"
                     android:src="@drawable/musicmain"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
@@ -89,20 +90,20 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton"
+                    android:id="@+id/imgexercise"
                     android:src="@drawable/tm"
                     android:scaleType="fitCenter"
-                    android:layout_weight="1"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:layout_weight="1" />
 
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/imgsymptom"
                     android:src="@drawable/symptoms"
                     android:scaleType="fitCenter"
-                    android:layout_weight="1"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:layout_weight="1" />
 
             </LinearLayout>
         </LinearLayout>
@@ -123,7 +124,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/imglifestyle"
                     android:src="@drawable/prego"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
@@ -132,7 +133,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/imgeDelivery"
                     android:src="@drawable/cmnty"
                     android:scaleType="fitCenter"
                     android:layout_weight="1"
