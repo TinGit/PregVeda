@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <include layout="@layout/header"/>
 
-</LinearLayout>
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/badhabit" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton6"
+            android:layout_marginLeft="343dp"
+            android:src="@drawable/homeicon"
+            android:layout_marginBottom="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicines and Drugs"
+                android:id="@+id/textView7"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember, whatever you take affects your baby. This includes tranquilizers, sleeping pills, cocaine, narcotics, marijuana, hallucinogens, or other products."
+            android:id="@+id/textView15" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexual Relations"
+                android:id="@+id/textView1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intercourse is likely to be restricted in early pregnancy if you have had a history of miscarriages, or later if you have had premature births."
+            android:id="@+id/textView16" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel"
+                android:id="@+id/textView2"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Late in your pregnancy, it is a good idea to avoid long trips. When you travel in a car, it is very important to wear both a shoulder harness and a lap belt to protect you and the baby in case of an accident. Just fasten the belt as low as possible below the baby."
+            android:id="@+id/textView17" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

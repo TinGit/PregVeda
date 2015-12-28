@@ -2,12 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView1"
-        android:src="@drawable/prego"
-        android:layout_alignParentTop="true" />
+    <include layout="@layout/header"/>
 
     <FrameLayout
         android:layout_width="100dp"
@@ -25,6 +20,135 @@
             android:layout_gravity="center_horizontal|top"
             android:src="@drawable/badhabit" />
     </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bad Habits"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#020202"
+                android:textStyle="bold"
+                android:layout_marginLeft="90dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton6"
+                android:layout_marginLeft="125dp"
+                android:src="@drawable/homeicon"
+                android:layout_marginBottom="1dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton7"
+                android:src="@drawable/nexticon"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smoking"
+                android:id="@+id/textView7"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Women who do not smoke are more likely to deliver a healthy baby of normal birth weight than women who do smoke. Smoking cigarettes during pregnancy is directly associated with low birth weight, premature births, miscarriage, and other complications.Babies born to mothers who smoked while pregnant and after delivery have a higher incidence of sudden infant death syndrome."
+            android:id="@+id/textView12" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alcohol"
+                android:id="@+id/textView1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alcohol in any form can be harmful to a developing baby. Do not drink alcoholic beverages when you are pregnant or are considering pregnancy. Also be aware of the alcoholic content of food and drugs."
+            android:id="@+id/textView13" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/bulletin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caffeine"
+                android:id="@+id/textView2"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" It's a good idea to use as little caffeine as possible. Many soft drinks, coffee, tea, cocoa, and chocolate contain caffeine. You can find out if a food or drink contains caffeine by checking the label. Choose milk and fruit juices as beverages and caffeine-free coffee, tea, or soft drinks."
+            android:id="@+id/textView14" />
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
