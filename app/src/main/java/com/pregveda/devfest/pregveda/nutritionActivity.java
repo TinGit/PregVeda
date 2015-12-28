@@ -19,7 +19,7 @@ public class nutritionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nutrition);
-        buttonNext=(Button)findViewById(R.id.buttonNext);
+//        buttonNext=(Button)findViewById(R.id.buttonNext);
         textViewnu4=(TextView)findViewById(R.id.textViewnu4);
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override

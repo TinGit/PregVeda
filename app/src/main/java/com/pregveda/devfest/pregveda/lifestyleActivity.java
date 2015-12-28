@@ -23,12 +23,16 @@ public class lifestyleActivity extends AppCompatActivity {
     Button btnMeditation;
     Button btnBadHabit;
     Button sanitationBtn;
-
+    ImageButton imglifeStyleHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.lifestyle);
+
+        imglifeStyleHome=(ImageButton)findViewById(R.id.imglifeStyleHome);
+
         btnRest = (Button) findViewById(R.id.rest);
         btnAbd = (Button) findViewById(R.id.abdominal);
         btnRelax=(Button) findViewById(R.id.relaxation);
@@ -83,7 +87,13 @@ public class lifestyleActivity extends AppCompatActivity {
                 setContentView(R.layout.badhabits);
             }
         });
+        imglifeStyleHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               finish();
 
+            }
+        });
 
     }
     }

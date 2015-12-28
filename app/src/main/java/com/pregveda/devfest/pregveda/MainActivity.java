@@ -49,8 +49,7 @@ ImageButton imgnutrition;
         imgnutrition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(getApplicationContext(),nutritionActivity.class);
-                startActivity(intent3);// for calling the activity
+                startActivity(new Intent(MainActivity.this,nutritionActivity.class));
             }
         });
         imgSettings.setOnClickListener(new View.OnClickListener() {
