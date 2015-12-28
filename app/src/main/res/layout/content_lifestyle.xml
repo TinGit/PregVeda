@@ -108,12 +108,13 @@
             android:layout_weight="1" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
             android:id="@+id/imglifeStyleHome"
-            android:src="@android:drawable/ic_menu_call"
+            android:src="@drawable/hom"
             android:layout_weight="1"
-            android:clickable="true" />
+            android:clickable="true"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="wrap_content"
