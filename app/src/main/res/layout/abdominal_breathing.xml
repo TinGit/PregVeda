@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAbd"
+        android:layout_weight="0.51"
+        android:text="There are breathing techniques that you can practice while you are pregnant to help you relax during labor. They also help reduce muscle tension that works against the contractions and causes pain. If you are able to relax, you will be able to use the rest periods between labor contractions to reduce fatigue and build up your energy."
+        android:contextClickable="false"
+        android:editable="false"
+        android:enabled="true" />
+
+</LinearLayout>

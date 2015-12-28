@@ -3,63 +3,51 @@ package com.pregveda.devfest.pregveda;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.provider.ContactsContract;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageButton;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton imageButton;
-    ImageButton imageButton1;
-    ImageButton imageButton2;
-    ImageButton imageButton3;
-    ImageButton imageButton4;
-    ImageButton imageButton5;
+ImageButton imgnutrition;
+    ImageButton imgmusic;
+    ImageButton imgexercise;
+    ImageButton imgsymptom;
+    ImageButton imglifestyle;
+    ImageButton imgeDelivery;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imgnutrition=(ImageButton)findViewById(R.id.imgnutrition);
+        imgexercise=(ImageButton)findViewById(R.id.imgexercise);
+        imgsymptom=(ImageButton)findViewById(R.id.imgsymptom);
+        imglifestyle=(ImageButton)findViewById(R.id.imglifestyle);
+        imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
+        imgmusic=(ImageButton)findViewById(R.id.imgmusic);
 
 
-       imageButton.setOnClickListener(new View.OnClickListener() {
+        imglifestyle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent read1=new Intent(getApplicationContext(),meditation.class);
-
-                startActivity(read1);
-
+                Intent intent = new Intent(getApplicationContext(),lifestyleActivity.class);
+                startActivity(intent);// for calling the activity
             }
         });
+
+
+
+
+
+
+
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
