@@ -10,7 +10,8 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout6">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -34,6 +35,22 @@
             android:layout_gravity="right"
             android:src="@android:drawable/btn_star_big_off"
             android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="84dp"
+        android:layout_above="@+id/linearLayout6">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgExercise" />
     </LinearLayout>
 
 
