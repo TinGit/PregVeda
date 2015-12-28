@@ -15,7 +15,7 @@ ImageButton imgnutrition;
     ImageButton imgsymptom;
     ImageButton imglifestyle;
     ImageButton imgeDelivery;
-
+    ImageButton  imgSettings;
 
 
     @Override
@@ -29,17 +29,36 @@ ImageButton imgnutrition;
         imglifestyle=(ImageButton)findViewById(R.id.imglifestyle);
         imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
         imgmusic=(ImageButton)findViewById(R.id.imgmusic);
-
+        imgSettings=(ImageButton)findViewById(R.id.imgSettings);
 
         imglifestyle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),lifestyleActivity.class);
-                startActivity(intent);// for calling the activity
+                Intent intent1 = new Intent(getApplicationContext(),lifestyleActivity.class);
+                startActivity(intent1);// for calling the activity
             }
         });
 
+        imgmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(),musicAcitivity.class);
+                startActivity(intent2);// for calling the activity
+            }
+        });
+        imgnutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(getApplicationContext(),nutritionActivity.class);
+                startActivity(intent3);// for calling the activity
+            }
+        });
+        imgSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
 
 
 
