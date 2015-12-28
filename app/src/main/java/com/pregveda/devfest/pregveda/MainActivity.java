@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.provider.ContactsContract;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,14 +31,22 @@ public class MainActivity extends AppCompatActivity {
         imageButton = (ImageButton) findViewById(R.id.imageButton);
 
 
-       imageButton.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent read1=new Intent(getApplicationContext(),meditation.class);
+                        Intent intent = new Intent(getApplicationContext(), meditation.class);
 
-                startActivity(read1);
+                    startActivity(intent);
 
+            }
+        });
+
+        Button next = (Button) findViewById(R.id.button);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), nutrition2.class);
+                startActivityForResult(myIntent, 0);
             }
         });
     }
