@@ -21,6 +21,7 @@
             android:src="@drawable/tmpic" />
     </FrameLayout>
 
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Transcendental Meditation practice helps a mother-to-be calm down her nervous system, relieve her stress and fatigue which can as a result pass on the positive effects to the baby."
             android:id="@+id/textView4"
-            android:layout_marginLeft="8dp" />
+            android:layout_marginLeft="8dp"
+            android:textColor="#020202" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
         android:layout_marginTop="200dp"
-        android:layout_marginLeft="70dp" />
+        android:layout_marginLeft="70dp"
+        android:textColor="#020202" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -82,7 +85,8 @@
                 android:text="Sit comfortably with eyes closed and silently repeat the mantra in your mind."
                 android:id="@+id/textView7"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
 </TableRow>
 
             <TableRow android:layout_width="wrap_content"
@@ -101,18 +105,19 @@
                 android:text="Do it effortlessly as this technique does not call for concentration."
                 android:id="@+id/textView8"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
 
             <TableRow android:layout_width="wrap_content"
                 android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/bulletin"
+                    android:layout_marginLeft="5dp" />
 
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="30dp"
-                android:id="@+id/imageView5"
-                android:src="@drawable/bulletin"
-                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +125,8 @@
                 android:text="Practice TM typically for 15-20 mins twice a day (morning before breakfast and afternoon before lunch)"
                 android:id="@+id/textView9"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
 
 
@@ -135,7 +141,8 @@
         android:layout_below="@+id/linearLayout2"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:layout_marginTop="140dp" />
+        android:layout_marginTop="140dp"
+        android:textColor="#020202" />
 
 
 
@@ -148,7 +155,8 @@
         android:layout_alignParentStart="true">
 
         <TableRow android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            style="#020202">
 
             <ImageView
                 android:layout_width="10dp"
@@ -163,7 +171,8 @@
                 android:text="Provides relaxation and inner peace"
                 android:id="@+id/row1"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
 
         <TableRow android:layout_width="wrap_content"
@@ -182,7 +191,8 @@
                 android:text="Reduces stresses"
                 android:id="@+id/row2"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
         <TableRow android:layout_width="wrap_content"
             android:layout_height="match_parent">
@@ -200,7 +210,8 @@
                 android:text="Reduces risk of hypertension, diabetes, heart failure and obesity"
                 android:id="@+id/row3"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
 
         <TableRow android:layout_width="wrap_content"
@@ -219,11 +230,19 @@
                 android:text="Improves quality of life resulting in happiness"
                 android:id="@+id/row4"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="2dp" />
+                android:layout_marginLeft="2dp"
+                android:textColor="#020202" />
         </TableRow>
     </TableLayout>
 
-
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:id="@+id/medhome_btn"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/homeicon" />
 
 
 </RelativeLayout>
