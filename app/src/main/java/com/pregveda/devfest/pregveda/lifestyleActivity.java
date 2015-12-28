@@ -14,6 +14,7 @@ import android.widget.ImageView;
 public class lifestyleActivity extends AppCompatActivity {
 
 
+    ImageButton imgliefStyle;
     ImageButton imageButton;
     Button btnRest;
     Button btnAbd;
@@ -25,7 +26,7 @@ public class lifestyleActivity extends AppCompatActivity {
         btnRest = (Button) findViewById(R.id.rest);
         btnAbd = (Button) findViewById(R.id.abdominal);
         btnRelax=(Button) findViewById(R.id.relaxation);
-
+         imgliefStyle=(ImageButton)findViewById(R.id.imglifeStyleHome);
         btnRest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,12 @@ public class lifestyleActivity extends AppCompatActivity {
             }
         });
 
+        imgliefStyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               finish();
+            }
+        });
 
     }
 

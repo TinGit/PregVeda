@@ -111,7 +111,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/imglifeStyleHome"
             android:src="@android:drawable/ic_menu_call"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"

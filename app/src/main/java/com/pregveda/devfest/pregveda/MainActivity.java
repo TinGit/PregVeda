@@ -34,8 +34,8 @@ ImageButton imgnutrition;
         imglifestyle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getApplicationContext(),lifestyleActivity.class);
-                startActivity(intent1);// for calling the activity
+                //Intent intent1 = new Intent(getApplicationContext(),lifestyleActivity.class);
+                startActivity(new Intent(MainActivity.this,lifestyleActivity.class));// for calling the activity
             }
         });
 
