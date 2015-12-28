@@ -25,5 +25,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:23.1.0'
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
-    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.google.android.gms:play-services-gcm:7.5.0'
 }
