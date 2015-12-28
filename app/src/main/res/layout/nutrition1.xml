@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:id="@+id/imageViewnu1"
+            android:id="@+id/imageViewn1"
             android:src="@drawable/nutritionpic"
             android:layout_marginTop="0dp" />
 
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Nutritional Recommendation"
-                android:id="@+id/textView8"
+                android:id="@+id/textViewn1"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textStyle="bold"
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView"
+                android:id="@+id/textViewn2"
                 android:textAlignment="center"
                 android:textSize="25dp"
                 android:textColor="#000000" />
@@ -57,7 +57,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu2"
+                android:id="@+id/imageViewn2"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="2 glasses of milk everyday throughout the pregnancy"
-                android:id="@+id/textViewnu1"
+                android:id="@+id/textViewn3"
                 android:paddingLeft="5dp"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
@@ -83,7 +83,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu3"
+                android:id="@+id/imageViewn3"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Sweet herbs like shatavari, bala"
-                android:id="@+id/textViewnu2"
+                android:id="@+id/textViewn4"
                 android:textColor="#000000"
                 android:paddingLeft="5dp"
                 android:paddingBottom="5dp"
@@ -110,7 +110,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu4"
+                android:id="@+id/imageViewn5"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="1-2 spoons of butter alone or with crystal sugar"
-                android:id="@+id/textViewnu3"
+                android:id="@+id/textViewn6"
                 android:paddingLeft="5dp"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
@@ -136,7 +136,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu5"
+                android:id="@+id/imageViewn7"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Black currants, lemon, amla, green leafy vegetables, beet, dates, dry or fresh figs"
-                android:id="@+id/textViewnu4"
+                android:id="@+id/textViewn7"
                 android:paddingLeft="5dp"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
@@ -163,7 +163,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu6"
+                android:id="@+id/imageViewn8"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Water and fresh juices. "
-                android:id="@+id/textViewnu5"
+                android:id="@+id/textViewn8"
                 android:paddingLeft="5dp"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
@@ -190,7 +190,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu7"
+                android:id="@+id/imageViewn9"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="3dp" />
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Vegetables like bottle gourd, snake gourd, pumpkin, okra (ladies finger)."
-                android:id="@+id/textViewnu6"
+                android:id="@+id/textViewn9"
                 android:paddingLeft="5dp"
                 android:textColor="#000000"
                 android:layout_marginBottom="5dp" />
@@ -216,7 +216,7 @@
             <ImageView
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:id="@+id/imageViewnu8"
+                android:id="@+id/imageViewn10"
                 android:layout_marginLeft="3dp"
                 android:src="@drawable/bulletin"
                 android:layout_marginTop="5dp" />
@@ -226,7 +226,7 @@
                 android:layout_height="33dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Gruel made of rice, sooji, wheat vermicell"
-                android:id="@+id/textViewnu7"
+                android:id="@+id/textViewn10"
                 android:textColor="#000000"
                 android:layout_marginLeft="3dp" />
         </LinearLayout>
@@ -235,7 +235,7 @@
             android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:text="Next"
-            android:id="@+id/buttonNext"
+            android:id="@+id/button"
             android:layout_gravity="right"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="65dp" />
