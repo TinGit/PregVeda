@@ -12,19 +12,19 @@ import android.widget.TextView;
 
 public class nutritionActivity extends AppCompatActivity {
 
-    TextView textView4;
-    Button btnNext;
+    TextView textViewnu4;
+    Button buttonNext;
     ImageView ml;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nutrition);
-        btnNext=(Button)findViewById(R.id.btnNext);
-        textView4=(TextView)findViewById(R.id.textView4);
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        buttonNext=(Button)findViewById(R.id.buttonNext);
+        textViewnu4=(TextView)findViewById(R.id.textViewnu4);
+        buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView4.setText("I change this text now so here it is ");
+                textViewnu4.setText("I change this text now so here it is ");
 
             }
         });
