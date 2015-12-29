@@ -109,7 +109,7 @@
         <ImageButton
             android:layout_width="90dp"
             android:layout_height="60dp"
-            android:id="@+id/imgbtnHome"
+            android:id="@+id/imgbtnDeliHome"
             android:src="@drawable/homepreg"
             android:scaleType="fitCenter" />
 

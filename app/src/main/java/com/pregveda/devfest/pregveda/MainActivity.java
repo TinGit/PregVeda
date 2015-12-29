@@ -18,6 +18,7 @@ ImageButton imgnutrition;
     ImageButton  imgSettings;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +28,12 @@ ImageButton imgnutrition;
         imgmusic=(ImageButton)findViewById(R.id.imgmusic);
         imgnutrition=(ImageButton)findViewById(R.id.imgnutrition);
         imgSettings=(ImageButton)findViewById(R.id.imgSettings);
-
+        imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
 
         imgexercise=(ImageButton)findViewById(R.id.imgexercise);
         imgsymptom=(ImageButton)findViewById(R.id.imgsymptom);
 
-        imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
+
 
 
         imgexercise.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,16 @@ ImageButton imgnutrition;
 
 
                 startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+
+            }
+        });
+
+        imgeDelivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                startActivity(new Intent(MainActivity.this, DeliveryActivity.class));
 
             }
         });

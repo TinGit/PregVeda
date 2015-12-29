@@ -55,12 +55,13 @@
             android:text="Weight"
             android:id="@+id/editText4" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Set Concieved Date:"
-            android:id="@+id/textView"
-            android:textStyle="bold" />
+            android:inputType="text"
+            android:ems="10"
+            android:text="Trimester"
+            android:id="@+id/editText6" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
