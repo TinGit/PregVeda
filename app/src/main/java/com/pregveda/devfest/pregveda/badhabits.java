@@ -12,6 +12,12 @@ public class badhabits extends Activity {
 
     ImageButton imgBtn;
     ImageButton imgBtn2;
+
+    ImageButton imgbtnHome;
+    ImageButton imgbtnNext;
+    ImageButton imgbtnPrev;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,22 +25,29 @@ public class badhabits extends Activity {
         setContentView(R.layout.badhabits);
 
 
-        imgBtn = (ImageButton) findViewById(R.id.badHabit_home);
-        imgBtn2= (ImageButton) findViewById(R.id.badHabit_next);
-
-        imgBtn.setOnClickListener(new View.OnClickListener() {
+        imgbtnHome = (ImageButton) findViewById(R.id.imgbtnHome);
+        imgbtnNext= (ImageButton) findViewById(R.id.imgbtnNext);
+        imgbtnPrev= (ImageButton) findViewById(R.id.imgbtnPrev);
+       /* imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.activity_main);
             }
+        });*/
+
+        imgbtnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  setContentView(R.layout.badhabits_next);
+                finish();
+            }
         });
 
-        imgBtn2.setOnClickListener(new View.OnClickListener() {
+        imgbtnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.badhabits_next);
             }
         });
-
     }
 }

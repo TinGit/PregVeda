@@ -40,6 +40,7 @@
             android:id="@+id/imageButton6"
             android:layout_marginLeft="343dp"
             android:src="@drawable/homeicon"
+            android:clickable="true"
             android:layout_marginBottom="1dp" />
         </LinearLayout>
 

@@ -9,7 +9,11 @@ import android.view.View;
  */
 public class meditation extends Activity {
 
-    ImageButton imgBtn;
+    ImageButton medhome_btn;
+
+    ImageButton imgbtnHome;
+    ImageButton imgbtnNext;
+    ImageButton imgbtnPrev;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -18,14 +22,15 @@ public class meditation extends Activity {
         setContentView(R.layout.meditation);
 
 
-        imgBtn = (ImageButton) findViewById(R.id.medhome_btn);
+        imgbtnHome = (ImageButton) findViewById(R.id.imgbtnHome);
 
-        imgBtn.setOnClickListener(new View.OnClickListener() {
+        imgbtnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_main);
+                finish();
             }
         });
+
 
     }
 

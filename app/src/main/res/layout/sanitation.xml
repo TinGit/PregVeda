@@ -52,6 +52,7 @@
                 android:id="@+id/sanitation_home"
                 android:layout_marginLeft="125dp"
                 android:src="@drawable/homeicon"
+                android:clickable="true"
                 android:layout_marginBottom="1dp" />
 
         </LinearLayout>
