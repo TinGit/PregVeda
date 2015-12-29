@@ -61,19 +61,14 @@
             android:id="@+id/textView"
             android:textStyle="bold" />
 
-        <DatePicker
-            android:layout_width="wrap_content"
-            android:layout_height="152dp"
-            android:id="@+id/datePicker"
-            android:datePickerMode="spinner" />
-
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="Save"
-            android:id="@+id/button"
+            android:id="@+id/btnSave"
             android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 
 </RelativeLayout>

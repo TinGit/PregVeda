@@ -21,7 +21,7 @@ ImageButton imgnutrition;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         imglifestyle=(ImageButton)findViewById(R.id.imglifestyle);
         imgmusic=(ImageButton)findViewById(R.id.imgmusic);
