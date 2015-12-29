@@ -243,7 +243,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgbtnPrev"
-                android:src="@drawable/PrevPreg"
+                android:src="@drawable/prevpreg"
                 android:layout_weight="1"
                 android:scaleType="fitCenter" />
 
@@ -251,14 +251,14 @@
                 android:layout_width="90dp"
                 android:layout_height="60dp"
                 android:id="@+id/imgbtnHome"
-                android:src="@drawable/HomePreg"
+                android:src="@drawable/homepreg"
                 android:scaleType="fitCenter" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgbtnNext"
-                android:src="@drawable/NextPreg"
+                android:src="@drawable/nextpreg"
                 android:layout_weight="1"
                 android:scaleType="fitCenter" />
         </LinearLayout>

@@ -32,13 +32,13 @@ public class exerciseActivity extends AppCompatActivity {
         btnExcerNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImgViewExer.setImageURI(Uri.parse("exercise2"));
+                ImgViewExer.setImageResource(R.drawable.exercise2);
             }
         });
         btnExcerPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                ImgViewExer.setImageResource(R.drawable.exercise1);
             }
         });
 

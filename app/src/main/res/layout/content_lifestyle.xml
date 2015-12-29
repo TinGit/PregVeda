@@ -106,7 +106,7 @@
             android:layout_width="90dp"
             android:layout_height="60dp"
             android:id="@+id/imglifeStyleHome"
-            android:src="@drawable/HomePreg"
+            android:src="@drawable/homepreg"
             android:layout_weight="1"
             android:clickable="true"
             android:scaleType="fitCenter" />
