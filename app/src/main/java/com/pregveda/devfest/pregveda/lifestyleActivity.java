@@ -53,7 +53,7 @@ public class lifestyleActivity extends AppCompatActivity {
         btnSan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.sanitation);
+                startActivity(new Intent(lifestyleActivity.this, sanitationActivity.class));
             }
         });
 
