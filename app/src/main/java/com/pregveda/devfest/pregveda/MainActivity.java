@@ -48,9 +48,8 @@ ImageButton imgnutrition;
             @Override
             public void onClick(View v) {
 
-
-
                 startActivity(new Intent(MainActivity.this,music.class));
+
             }
         });
         imgnutrition.setOnClickListener(new View.OnClickListener() {

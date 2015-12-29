@@ -26,24 +26,27 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnExcerPrev"
             android:layout_gravity="right"
-            android:src="@android:drawable/ic_media_rew"
-            android:layout_weight="1" />
+            android:src="@drawable/PrevPreg"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnExcerHome"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/homeicon"
-            android:layout_weight="1" />
+            android:src="@drawable/HomePreg"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnExcerNext"
             android:layout_gravity="right"
-            android:src="@android:drawable/ic_media_ff"
-            android:layout_weight="1" />
+            android:src="@drawable/NextPreg"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
 
     </LinearLayout>
 
