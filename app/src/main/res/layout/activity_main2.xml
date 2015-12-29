@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pregveda.devfest.pregveda.Main2Activity"
-    android:background="#fceaf4">
+    android:background="#ffebf6">
 
     <include layout="@layout/header"
         android:layout_width="fill_parent"
