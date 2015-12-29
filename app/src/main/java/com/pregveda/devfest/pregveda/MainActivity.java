@@ -35,6 +35,13 @@ ImageButton imgnutrition;
         imgeDelivery=(ImageButton)findViewById(R.id.imgeDelivery);
 
 
+        imgexercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this,exerciseActivity.class));// for calling the activity
+            }
+        });
 
         imglifestyle.setOnClickListener(new View.OnClickListener() {
             @Override

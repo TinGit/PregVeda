@@ -37,7 +37,8 @@
             android:clickable="true"
             android:longClickable="true"
             android:onClick="setContentView"
-            android:contentDescription="imageFood" />
+            android:contentDescription="imageFood"
+            android:background="#ffebf6" />
 
         <ImageButton
             android:layout_width="fill_parent"
@@ -46,7 +47,8 @@
             android:src="@drawable/musicmain"
             android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="#ffebf6" />
 
     </LinearLayout>
 
@@ -66,16 +68,18 @@
             android:src="@drawable/tm"
             android:scaleType="fitCenter"
             android:clickable="true"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ffebf6" />
 
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton4"
-            android:src="@drawable/symptoms"
+            android:id="@+id/imgSymptom"
+            android:src="@drawable/symptom"
             android:scaleType="fitCenter"
             android:clickable="true"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ffebf6" />
     </LinearLayout>
 
     <LinearLayout
@@ -91,10 +95,11 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imglifestyle"
-            android:src="@drawable/prego"
+            android:src="@drawable/lifestyle"
             android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="#ffebf6" />
 
         <ImageButton
             android:layout_width="fill_parent"
@@ -103,7 +108,8 @@
             android:src="@drawable/delivery"
             android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="#ffebf6" />
     </LinearLayout>
 
     <LinearLayout
@@ -123,7 +129,8 @@
             android:layout_column="1"
             android:src="@android:drawable/ic_menu_manage"
             android:scaleType="fitStart"
-            android:layout_weight="0.20" />
+            android:layout_weight="0.20"
+            android:background="#ffebf6" />
     </LinearLayout>
 
     <LinearLayout

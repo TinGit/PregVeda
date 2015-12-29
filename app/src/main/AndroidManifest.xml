@@ -36,8 +36,8 @@
                 android:value="com.pregveda.devfest.pregveda.MainActivity" />
         </activity>
         <activity
-            android:name=".musicAcitivity"
-            android:label="@string/title_activity_music_acitivity"
+            android:name=".music"
+            android:label="Music"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
