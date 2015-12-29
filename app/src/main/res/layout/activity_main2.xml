@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pregveda.devfest.pregveda.Main2Activity"
+    android:background="#fceaf4">
+
+    <include layout="@layout/header"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp"
+        android:id="@+id/linearLayout6">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgnutrition"
+            android:src="@drawable/food"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:longClickable="true"
+            android:onClick="setContentView"
+            android:contentDescription="imageFood" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgmusic"
+            android:src="@drawable/musicmain"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout7">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgexercise"
+            android:src="@drawable/tm"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/symptoms"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout8">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imglifestyle"
+            android:src="@drawable/prego"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgeDelivery"
+            android:src="@drawable/delivery"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="138dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgSettings"
+            android:layout_row="17"
+            android:layout_column="1"
+            android:src="@android:drawable/ic_menu_manage"
+            android:scaleType="fitStart"
+            android:layout_weight="0.20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+</RelativeLayout>
