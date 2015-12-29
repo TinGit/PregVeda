@@ -50,7 +50,7 @@ ImageButton imgnutrition;
 
 
 
-                startActivity(new Intent(MainActivity.this,musicAcitivity.class));
+                startActivity(new Intent(MainActivity.this,music.class));
             }
         });
         imgnutrition.setOnClickListener(new View.OnClickListener() {

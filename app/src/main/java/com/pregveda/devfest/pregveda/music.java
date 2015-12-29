@@ -5,8 +5,8 @@ package com.pregveda.devfest.pregveda;
  */
 
 import android.media.MediaPlayer;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.os.Handler;
 import java.util.concurrent.TimeUnit;
 
-public class music extends ActionBarActivity {
+public class music extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private TextView songName, songDuration;
     private SeekBar seekBar;
@@ -30,7 +30,7 @@ public class music extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.musiclay);
         songName = (TextView) findViewById(R.id.songName);
         songDuration = (TextView) findViewById(R.id.songDuration);
         mediaPlayer = MediaPlayer.create(this, R.raw.garbhsanskar);

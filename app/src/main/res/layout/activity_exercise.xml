@@ -13,7 +13,7 @@
         android:id="@+id/include2" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/linearLayout9"
@@ -24,20 +24,27 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnExcerNext"
-            android:layout_gravity="right" />
+            android:id="@+id/btnExcerPrev"
+            android:layout_gravity="right"
+            android:src="@android:drawable/ic_media_rew"
+            android:layout_weight="1" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnExcerHome"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/homeicon"
+            android:layout_weight="1" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnExcerPrev"
-            android:layout_gravity="right" />
+            android:id="@+id/btnExcerNext"
+            android:layout_gravity="right"
+            android:src="@android:drawable/ic_media_ff"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -54,7 +61,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView"
+            android:id="@+id/ImgViewExer"
             android:layout_gravity="center_vertical"
             android:src="@drawable/exercise1" />
     </LinearLayout>
