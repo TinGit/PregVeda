@@ -87,6 +87,7 @@ public class lifestyleActivity extends AppCompatActivity {
                 setContentView(R.layout.badhabits);
             }
         });
+
         imglifeStyleHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

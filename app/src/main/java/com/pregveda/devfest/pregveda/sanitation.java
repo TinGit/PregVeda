@@ -10,7 +10,9 @@ import android.widget.ImageButton;
  */
 public class sanitation extends Activity {
 
-    ImageButton imgBtn;
+    ImageButton imgbtnHome;
+    ImageButton imgbtnNext;
+    ImageButton imgbtnPrev;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,14 +21,32 @@ public class sanitation extends Activity {
         setContentView(R.layout.sanitation);
 
 
-        imgBtn = (ImageButton) findViewById(R.id.sanitation_home);
+     /*   imgBtn = (ImageButton) findViewById(R.id.sanitation_home);
 
         imgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.activity_main);
             }
+        });*/
+
+        imgbtnHome = (ImageButton) findViewById(R.id.imgbtnHome);
+
+        imgbtnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
         });
+
+       /* imgbtnNext = (ImageButton) findViewById(R.id.imgbtnNext);
+
+        imgbtnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.);
+            }
+        });*/
 
     }
 }

@@ -49,5 +49,12 @@ public class badhabits extends Activity {
                 setContentView(R.layout.badhabits_next);
             }
         });
+
+        imgbtnPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.badhabits);
+            }
+        });
     }
 }
