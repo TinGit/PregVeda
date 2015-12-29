@@ -27,7 +27,8 @@
             android:inputType="textPersonName"
             android:text="Name"
             android:ems="10"
-            android:id="@+id/editText" />
+            android:id="@+id/editText"
+            android:hint="Name" />
 
         <EditText
             android:layout_width="match_parent"
