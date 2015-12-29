@@ -63,7 +63,8 @@
                 android:value="com.pregveda.devfest.pregveda.MainActivity" />
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".exerciseActivity"></activity>
+        <activity android:name=".exerciseActivity" />
+        <activity android:name=".DeliveryActivity"></activity>
     </application>
 
 </manifest>
